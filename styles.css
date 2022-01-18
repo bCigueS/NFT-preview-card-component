@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-cbg: hsl(216, 50%, 16%);
+  --very-dark-blue-l: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--very-dark-blue-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+img {
+  max-width: 100%;
+}
+.container {
+  font-family: 'Outfit', sans-serif;
+  color: var(--white);
+  background-color: var(--very-dark-blue-cbg);
+  margin: 20px;
+  padding: 24px;
+  border-radius: 20px;
+  max-width: 320px;
+}
+
+.illustration {
+  background: var(--cyan) url(./images/icon-view.svg) no-repeat center;
+  border-radius: 20px;
+
+}
+.image-head {
+  display: block;
+  border-radius: 20px;
+  opacity: 1;
+  transition: all 0.1s ease-in-out;
+}
+
+.illustration:hover img {
+  opacity: 0.4;
+}
+
+
+
+.title {
+  margin: 24px auto 12px auto;
+  font-weight: 600;
+}
+.title:hover {
+  cursor: pointer;
+  color: var(--cyan);
+  transition: all 0.4s ease-in-out ;
+}
+
+.text {
+  margin: 0 auto 16px auto;
+  color: var(--soft-blue);
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.info .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cyan);
+}
+
+.info .price img {
+  margin-right: 8px;
+}
+
+.info .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--soft-blue);
+}
+
+.info .date img {
+  margin-right: 8px;
+}
+
+.creater {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 16px;
+  color: var(--soft-blue);
+  border-top: 1px solid var(--very-dark-blue-l);
+  
+}
+
+.creater img {
+  max-height: 30px;
+  margin-right: 10px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.creater p {
+  font-size: 15px;
+  font-weight: 400;  
+}
+.creater span {
+  color: var(--white);
+}
+
+.creater span:hover {
+  cursor: pointer;
+  color: var(--cyan);
+  transition: all 0.4s ease-in-out ;
+}
+
+/* Attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
